@@ -77,8 +77,6 @@ class Attachment
             switch_to_blog($this->site->id());
             add_filter('wp_prepare_attachment_for_js', [$this, 'prepareAttachmentForJs'], 0);
         }
-
-        wp_ajax_query_attachments();
     }
 
     /**
